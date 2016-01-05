@@ -13,7 +13,7 @@
     <form id="form1" runat="server" class="payment-form">
         <script>
             Checkout.render({
-                debugMode: true,                   //set to true to see console messages
+                debugMode: false,                   //set to true to see console messages
                 renderMode: 0,                      //0 = All, 1 = Pay Button Only, 2 = Icons Only. Default: 0 (3 is undocumented which displays link buttons only)
                 publicKey: 'pk_test_67b6e002-7cf4-4bea-80b7-89b8e0650c92',
                 paymentToken: '<%=sPayTok()%>',
