@@ -1,0 +1,71 @@
+﻿{
+  "count": 3,
+  "data": [
+    {
+      "customerId": "cust_0CDCC1FC-F947-4698-93AE-0A30F6DDD1EE",
+      "expiryMonth": "06",
+      "expiryYear": "2018",
+      "billingDetails": {
+        "addressLine1": "56 Pasir Ris",
+        "addressLine2": "Great Plain",
+        "postcode": "012345",
+        "country": "SG",
+        "city": "Pasir Isle",
+        "state": "Pasir",
+        "phone": {
+          "countryCode": "65",
+          "number": "67744589"
+        }
+      },
+      "id": "card_FF709FFB-8748-4767-8628-3295487661FE",
+      "last4": "4242",
+      "paymentMethod": "Visa",
+      "fingerprint": "F639CAB2745BEE4140BF86DF6B6D6E255C5945AAC3788D923FA047EA4C208622",
+      "name": "Dr Jonathan"
+    },
+    {
+      "customerId": "cust_0CDCC1FC-F947-4698-93AE-0A30F6DDD1EE",
+      "expiryMonth": "06",
+      "expiryYear": "2017",
+      "billingDetails": {
+        "addressLine1": "56 Bt Timah",
+        "addressLine2": "Simple Plain",
+        "postcode": "123456",
+        "country": "SG",
+        "city": "Temasek",
+        "state": "Arnarchy",
+        "phone": {
+          "countryCode": "65",
+          "number": "65655578"
+        }
+      },
+      "id": "card_4B5DF99C-D07E-49B4-9C17-43D85598C463",
+      "last4": "6378",
+      "paymentMethod": "MasterCard",
+      "fingerprint": "B69A4B9F96967BCC7180C1E54FB1C9027AFC3B33D32C9A2C47FC7C4FB3AAC056",
+      "name": "Dr Jonathan"
+    },
+    {
+      "customerId": "cust_0CDCC1FC-F947-4698-93AE-0A30F6DDD1EE",
+      "expiryMonth": "05",
+      "expiryYear": "2017",
+      "billingDetails": {
+        "addressLine1": "56 Bt Timah",
+        "addressLine2": "Simple Plain",
+        "postcode": "123456",
+        "country": "SG",
+        "city": "Temasek",
+        "state": "Arnarchy",
+        "phone": {
+          "countryCode": "65",
+          "number": "65655578"
+        }
+      },
+      "id": "card_29FCFF5B-150A-4AA0-BEF9-14A3610DEB10",
+      "last4": "4564",
+      "paymentMethod": "Amex",
+      "fingerprint": "5D3897345F99A68C99012CAF3C2BD371DCA24C7CCFAE032824FE9C27C1D7310E",
+      "name": "Dr Jonathan"
+    }
+  ]
+}

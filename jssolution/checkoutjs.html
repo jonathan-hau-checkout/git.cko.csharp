@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+    <title>Testing checkout.js</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        var amount = 100;
+        var currency = 'USD';
+        var pt;
+
+        //==========  Create Payment token - START (Should be done on server side) ==========================
+
+        var urls = "https://sandbox.checkout.com/api2/v2/tokens/payment";
+        var charset = "application/json; charset=utf-8";
+
+        var secretKey = "sk_test_707fa6f7-b21d-4262-a391-3cb0698a4052";
+
+        var request = {};
+        request['value'] = amount;
+        request['currency'] = currency;
+
+        //chargeMode = 2 => 3D payments
+        request['chargeMode'] = 2;
+
+        //$( "#divAmount" ).append("Total: "+amount+" "+currency);
+
+        $.ajax({
+            url: urls,
+            type: "POST",
+            headers: {
+                "Accept": charset,
+                "Content-Type": charset,
+                "Authorization": secretKey
+            },
+            async: false,
+            data: JSON.stringify(request),
+            dataType: "json",
+            success: function (data) {
+                pt = data.id;
+            }
+        });
+        //========== Create Payment token - END ==========================
+    </script>
+    <script src="https://sandbox.checkout.com/js/v1/checkout.js" ></script>
+</head>
+<body>
+    <form method="POST" class="payment-form">
+        <script>
+            Checkout.render({
+                debugMode: true,
+                publicKey: 'pk_test_67b6e002-7cf4-4bea-80b7-89b8e0650c92', //'pk_test_1fd03f77-aa3d-4c6e-81af-b9357fee8b67',
+                paymentToken: pt,
+                customerEmail: 'user@email.com',
+                customerName: 'Demo User',
+                value: 100,
+                currency: 'GBP',
+                widgetContainerSelector: '.payment-form',
+                widgetColor: '#333',
+                themeColor: '#3075dd',
+                buttonColor: '#51c470',
+                logoUrl: "http://www.merchant.com/images/logo.png",
+                cardCharged: function (event) {
+                    console.log(event);
+                    // do work
+                }
+            });
+        </script>
+    </form>
+</body>
+</html>
