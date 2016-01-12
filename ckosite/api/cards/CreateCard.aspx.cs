@@ -97,7 +97,7 @@ public partial class card_CreateCard : System.Web.UI.Page
                 break;
             case "Amex01":
                 expiryMonth = "06";
-                expiryYear = "2018";
+                expiryYear = "2017";
                 cvv = "1051";
                 cardNum = "345678901234564";
                 break;

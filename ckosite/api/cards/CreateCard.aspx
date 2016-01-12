@@ -26,7 +26,7 @@
                 <asp:ListItem Value="Visa01">Visa | 4242424242424242 | Exp 0618 | CVV 100</asp:ListItem>
                 <asp:ListItem Value="Visa02">Visa | 4543474002249996 | Exp 0617 | CVV 956</asp:ListItem>
                 <asp:ListItem Value="Master01">Master | 5436031030606378 | Exp 0617 | CVV 257</asp:ListItem>
-                <asp:ListItem Value="Amex01">Amex | 345678901234564 | Exp 0618 | CVV 1051</asp:ListItem>
+                <asp:ListItem Value="Amex01">Amex | 345678901234564 | Exp 0617 | CVV 1051</asp:ListItem>
                 <asp:ListItem Value="Amex02">Amex | 378282246310005 | Exp 0618 | CVV 1000</asp:ListItem>
                 <asp:ListItem Value="Diners01">Diners | 30123456789019 | Exp 0617 | CVV 257</asp:ListItem>
                 <asp:ListItem Value="Jcb01">JCB | 3530111333300000 | Exp 0618 | CVV 100</asp:ListItem>
