@@ -22,6 +22,7 @@
                 value: 100,                         // omitting this will not render the widget properly. see http://developers.checkout.com/docs/server/api-reference/charges/simulator for simluating different values.
                 countryCode: 'CN',
                 currency: 'USD',
+                customerIp: '118.200.158.51',
                 widgetContainerSelector: '.payment-form',
                 logoUrl: "https://checkout.com/wp-content/uploads/Logo_White_v2.png",
                 title: 'Payment Title',

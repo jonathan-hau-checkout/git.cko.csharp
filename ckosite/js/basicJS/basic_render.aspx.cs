@@ -25,7 +25,8 @@ public partial class basicjs : System.Web.UI.Page
             Currency = "USD",
             ChargeMode = 1,     //A valid charge mode: 1 for No 3D, 2 for 3D, 3 Local Payment. Default is 1 if not provided.
             Udf1 = "new token",
-            AutoCapture = "N"
+            AutoCapture = "N",
+            CustomerIp = "118.200.158.51"
         };
 
         // Create APIClient instance with your secret key
